@@ -20,36 +20,29 @@ Features
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/django-assignment-management.git
-   cd django-assignment-management
+   git clone https://github.com/Qarmau/assignments-project
+   cd assignments-project
    ```
 
-2. **Create and activate a virtual environment:**
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
-
-3. **Install the required packages:**
+2. Install the required packages:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Apply database migrations:**
+3. Apply database migrations:
 
    ```bash
    python manage.py migrate
    ```
 
-5. **Create a superuser for the admin interface:**
+4. Create a superuser for the admin interface:
 
    ```bash
    python manage.py createsuperuser
    ```
 
-6. **Run the development server:**
+5. Run the development server:
 
    ```bash
    python manage.py runserver
@@ -57,39 +50,19 @@ Features
 
    You can now access the application at `http://127.0.0.1:8000/`.
 
-## Configuration
 
-1. **Database Setup:**
-   - By default, the project uses SQLite. For PostgreSQL or other databases, update the `DATABASES` setting in `settings.py`.
+ Usage
 
-2. **Email Configuration:**
-   - Configure email settings in `settings.py` for sending notifications.
-
-3. **Static Files:**
-   - Ensure you collect static files before deploying:
-
-     ```bash
-     python manage.py collectstatic
-     ```
-
-4. **Environment Variables:**
-   - Store sensitive information such as secret keys and database credentials in environment variables or use a package like `django-environ`.
-
-## Usage
-
-1. **Accessing the System:**
+1. Accessing the System:
    - Visit the admin interface at `http://127.0.0.1:8000/admin` to manage assignments and users.
 
-2. **Teacher Functions:**
+2. Teacher Functions:
    - Log in to the teacher dashboard to upload and manage assignments.
 
-3. **Student Functions:**
+3. Student Functions:
    - Students can log in to view and download assignments.
 
-4. **Email Notifications:**
-   - Teachers will receive notifications when assignments are uploaded. Ensure your email configuration is correct.
-
-## Contributing
+ Contributing
 
 We welcome contributions to improve the Django Assignment Management System. If you have suggestions or improvements, please follow these steps:
 
@@ -102,12 +75,12 @@ We welcome contributions to improve the Django Assignment Management System. If 
 
 Please ensure that your code follows the existing style and includes relevant tests.
 
-## License
+License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-For any questions or support, please contact [your-email@example.com](mailto:your-email@example.com).
+For any questions or support, please contact kamauj613@gmail.com
 
 Thank you for using the Django Assignment Management System! We hope it enhances your educational experience.
