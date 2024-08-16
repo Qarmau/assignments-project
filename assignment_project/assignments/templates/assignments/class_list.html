@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments</title>
+    <link rel="stylesheet" href="{% static 'assignments/css/style.css' %}">
+</head>
+<body>  
+    <header>
+        <nav>
+            <div class="logo">Githumu High School Assignment Portal</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>August Holiday Assignments</h1>
+        <ul class="assignment-list">
+        {% for class in class_list %}
+            <li>
+                
+                <a href="{% url 'assignment_list' class.id %}" class="download-button"><span class="assignment-title">{{ class.grade }}</span></a>
+            </li>
+        {% endfor %}
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Githumu High School. All rights reserved.</p>
+    </footer>
+</body>
+</html>
